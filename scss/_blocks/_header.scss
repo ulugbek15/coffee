@@ -1,0 +1,39 @@
+.header{
+    &__nav{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 44px 0px;
+    }
+    &__list{
+        display: flex;
+        list-style-type: none;
+        padding: 0;
+    }
+    &__item{
+        margin-right: 33px;
+        &:last-child{
+            margin-right: 0;
+        }
+    }
+    &__link{
+        color: #83888F;
+        font-weight: 700;
+        text-transform: uppercase;
+        text-decoration: none;
+    }
+    &__bar{
+        display: none;
+    }
+}
+
+@media screen and(max-width: 375px) {
+    .header{
+        &__list{
+            display: none;
+        }
+        &__bar{
+            display: block;
+        }
+    }
+}

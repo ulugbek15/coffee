@@ -1,0 +1,40 @@
+.footer{
+    &__nav{
+        display: flex;
+        align-items: center;
+        margin: 200px 0px 80px 0px;
+        padding: 45px 85px;
+        background-color: #2C343E;
+    }
+    &__menu{
+        display: flex;
+        list-style-type: none;
+        margin-left: 103px;
+        &--item{
+            margin-right: 33px;
+            &:last-child{
+                margin-right: 0;
+            }
+        }
+        &--link{
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 12px;
+            line-height: 15px;
+            letter-spacing: 0.923077px;
+            text-transform: uppercase;
+            color: #83888F;
+        }
+    }
+    &__socials{
+        margin-left: auto;
+        list-style-type: none;
+        display: flex;
+    }
+    &__social-item{
+        margin-right: 24px;
+        &:last-child{
+            margin-right: 0;
+        }
+    }
+}
